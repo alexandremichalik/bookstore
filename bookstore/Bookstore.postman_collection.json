@@ -215,25 +215,17 @@
 			"name": "Borrowing",
 			"item": [
 				{
-					"name": "Borrowin cards",
+					"name": "List All borrowed",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/books/:id/borrowincards",
+							"raw": "{{baseUrl}}/borrowingcards",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"books",
-								":id",
-								"borrowincards"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": ""
-								}
+								"borrowingcards"
 							]
 						}
 					},
@@ -259,23 +251,6 @@
 									"key": "id",
 									"value": null
 								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "List Borrowing",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{baseUrl}}/borrowincards",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"borrowincards"
 							]
 						}
 					},
