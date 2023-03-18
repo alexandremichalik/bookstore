@@ -36,7 +36,7 @@ public class BorrowingCardController {
         return ResponseEntity.ok().body(borrowingCard);
     }
 
-    @PutMapping(name = "/{id}", consumes = "application/json")
+    @PutMapping(value = "/{id}", consumes = "application/json")
     public ResponseEntity<BorrowingCardDTO> updateBorrowingBook(@PathVariable Long id, @RequestBody BorrowingcardModel borrowingcardModel){
         BorrowingCardDTO borrowingCardDTO = borrowingCardService.updateBorrowingBook(id, borrowingcardModel);
         return ResponseEntity.ok().body(borrowingCardDTO);
