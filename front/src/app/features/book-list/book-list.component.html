@@ -1,0 +1,12 @@
+<table *ngIf="books != []" id="books">
+  <tr>
+    <th>Title</th>
+    <th>Language</th>
+    <th>Genre</th>
+  </tr>
+  <tr *ngFor="let book of books">
+    <td>{{book.title}}</td>
+    <td>{{book.language}}</td>
+    <td>{{book.genre}}</td>
+  </tr>
+</table>

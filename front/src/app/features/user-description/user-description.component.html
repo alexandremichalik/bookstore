@@ -1,0 +1,23 @@
+<form (ngSubmit)="submit()">
+  <input type="number" name="id" placeholder="id" [(ngModel)]="searchForm">
+  <button type="submit">Search</button>
+</form>
+
+<table *ngIf="user" id="user">
+  <tr>
+    <td>ID</td>
+    <td>{{user.id}}</td>
+  </tr>
+  <tr>
+    <td>Firstname</td>
+    <td>{{user.firstname}}</td>
+  </tr>
+  <tr>
+    <td>Lastname</td>
+    <td>{{user.lastname}}</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>
